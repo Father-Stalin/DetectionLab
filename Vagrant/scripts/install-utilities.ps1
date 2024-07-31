@@ -1,5 +1,5 @@
 # Purpose: Installs chocolatey package manager, then installs custom utilities from Choco.
-
+$Env:chocolateyVersion = "1.4.0"
 If (-not (Test-Path "C:\ProgramData\chocolatey")) {
   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
   Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Installing Chocolatey"
